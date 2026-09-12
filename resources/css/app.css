@@ -1,0 +1,43 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-800 antialiased;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}
+
+@layer components {
+    .ssz-focus {
+        @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+    }
+
+    .ssz-scroll-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ssz-plate {
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}

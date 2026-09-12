@@ -1,0 +1,42 @@
+{
+    "name": "School Safe Zone SMAN 1 Ciruas",
+    "short_name": "SSZ Ciruas",
+    "description": "Aman berangkat, aman pulang, orang tua tenang.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#1D4ED8",
+    "background_color": "#ffffff",
+    "lang": "id",
+    "dir": "ltr",
+    "categories": ["education", "utilities"],
+    "icons": [
+        {
+            "src": "/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/icons/icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Scan QR",
+            "short_name": "Scan",
+            "url": "/petugas/scan",
+            "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+        }
+    ]
+}
